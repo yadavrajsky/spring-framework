@@ -9,14 +9,5 @@
 	http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/util 
 	https://www.springframework.org/schema/util/spring-util.xsd">
-	
-<context:component-scan base-package="com.springcore.stereotype" />
-<util:list list-class="java.util.ArrayList" id="temp">
-	<value>Lucknow</value>
-</util:list>
-<bean name="stu1" class="com.springcore.stereotype.Student" scope="prototype">
-	<property name="studentName" value="Manish"/>
-	<property name="studentCity" value="New York"/>
-	<property name="address" value="#{temp}"/>
-</bean>
-</beans>
+	<context:component-scan base-package="com.springcore.spel"/>
+	</beans>
