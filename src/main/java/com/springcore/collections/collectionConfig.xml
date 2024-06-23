@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee" class="com.springcore.collections.Employee">
+		<!-- collaborators and configuration for this bean go here -->
+        <property name="name" value="Akash Yadav"/>
+        <property name="phones">
+			<list>
+				<value>1234567890</value>
+				<value>0987654321</value>
+			</list>
+		</property>
+        <property name="addresses">
+			<set>
+				<value>Delhi</value>
+				<value>Mumbai</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="Java" value="Core Java"/>
+				<entry key="Spring" value="Spring Framework"/>
+			</map>
+		</property>
+	</bean>
+</beans>

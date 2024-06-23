@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="address" class="com.springcore.auto.wire.Address" name="address">
+		<!-- collaborators and configuration for this bean go here -->
+        <property name="city" value="Pune"/>
+        <property name="state" value="Maharashtra"/>
+        <property name="country" value="India"/>
+	</bean>
+    <!-- <bean class="com.springcore.auto.wire.Employee" name="emp1" autowire="byType" /> -->
+    <!-- <bean class="com.springcore.auto.wire.Employee" name="emp1" autowire="byName" />\\\rewq	  
+	DG221
+	0
+	 -->
+    <bean class="com.springcore.auto.wire.Employee" name="emp1" autowire="constructor" />
+</beans>
