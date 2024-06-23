@@ -7,7 +7,7 @@ public class TestMain {
     public static void main(String[] args) {
         ApplicationContext applicationContext=new AnnotationConfigApplicationContext(JavaConfig.class);
         Student student=applicationContext.getBean("student",Student.class);
-        Student student1=applicationContext.getBean("student",Student.class);
+        Student student1=applicationContext.getBean("student1",Student.class);
         System.out.println(student);
         System.out.println(student1);
     }
